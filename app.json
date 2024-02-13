@@ -1,0 +1,30 @@
+{
+  "id": "a4b628f3-c91c-4fc5-bd88-4f7475580013",
+  "name": "Television Project",
+  "publisher": "Default Publisher",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+  
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "14.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+
+  "runtime": "3.2",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
