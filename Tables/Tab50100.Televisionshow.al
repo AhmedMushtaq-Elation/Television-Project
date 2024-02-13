@@ -1,29 +1,34 @@
 table 50100 "Television show"
 {
     Caption = 'Television show';
-    DataClassification = ToBeClassified;
+    DataClassification = CustomerContent;
 
     fields
     {
         field(1; "Code"; Code[20])
         {
             NotBlank = true;
+            DataClassification = CustomerContent;
         }
         field(2; Name; Text[80])
         {
             Caption = 'Name';
+            DataClassification = CustomerContent;
         }
         field(3; Synopsis; Text[250])
         {
             Caption = 'Synopsis';
+            DataClassification = CustomerContent;
         }
         field(4; Status; Option)
         {
             OptionCaption = 'Active,Finished';
             OptionMembers = Active,Finished;
+            DataClassification = CustomerContent;
         }
         field(5; "First Aired"; Date)
         {
+            DataClassification = CustomerContent;
             Caption = 'First Aired';
             trigger OnValidate()
 
@@ -33,6 +38,7 @@ table 50100 "Television show"
         }
         field(6; "Last Aired"; Date)
         {
+            DataClassification = CustomerContent;
             trigger OnValidate()
 
             begin
@@ -42,6 +48,7 @@ table 50100 "Television show"
         field(7; "Created By"; Code[50])
         {
             Editable = false;
+            DataClassification = CustomerContent;
         }
     }
     keys
