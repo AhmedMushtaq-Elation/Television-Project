@@ -5,6 +5,8 @@ page 50101 "Television Show List"
     PageType = List;
     SourceTable = "Television show";
     UsageCategory = Lists;
+    Editable = false;
+    CardPageId = "Television show card";
 
     layout
     {
@@ -26,6 +28,10 @@ page 50101 "Television Show List"
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the value of the Status field.';
+                }
+                field("Created By"; Rec."Created By")
+                {
+                    ApplicationArea = All;
                 }
             }
         }

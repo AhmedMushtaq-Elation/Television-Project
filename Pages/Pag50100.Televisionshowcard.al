@@ -32,6 +32,10 @@ page 50100 "Television show card"
                 {
                     ApplicationArea = All;
                 }
+                field("Last Aired"; Rec."Last Aired")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
